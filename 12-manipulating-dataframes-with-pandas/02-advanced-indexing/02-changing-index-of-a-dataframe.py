@@ -17,7 +17,9 @@ Assign new_idx to sales.index.
 Print the sales dataframe. This has been done for you, so hit 'Submit Answer' and to see how the index changed.
 '''
 # Create the list of new indexes: new_idx
-new_idx = [i.upper() for i in sales.index]
+# new_idx = [i.upper() for i in sales.index]
+# hahah, I have two ways of solving this problem
+new_idx = pd.Series(sales.index).str.upper()
 
 # Assign new_idx to sales.index
 sales.index = new_idx

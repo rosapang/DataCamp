@@ -15,6 +15,19 @@ Print tx_weather_suff to examine its contents. This has been done for you.
 Perform a third ordered merge on austin and houston.
 This time, in addition to the on and suffixes parameters, specify the keyword argument fill_method='ffill' to use forward-filling to replace NaN entries with the most recent non-null entry, and hit 'Submit Answer' to examine the contents of the merged DataFrames!
 '''
+
+# austin
+#         date ratings
+# 0 2016-01-01  Cloudy
+# 1 2016-02-08  Cloudy
+# 2 2016-01-17   Sunny
+
+# houston
+#         date ratings
+# 0 2016-01-04   Rainy
+# 1 2016-01-01  Cloudy
+# 2 2016-03-01   Sunny
+
 # Perform the first ordered merge: tx_weather
 tx_weather = pd.merge_ordered(austin, houston)
 

@@ -27,3 +27,4 @@ Possible Answers
 -df1; the rows are not all separate observations.
 '''
 
+# df2; each variable is not a separate column.

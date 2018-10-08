@@ -16,6 +16,22 @@ Make a new DataFrame us_annual by resampling the DataFrame us exactly as you res
 Concatenate china_annual and us_annual to construct a DataFrame called gdp. Use join='inner' to perform an inner join and use axis=1 to concatenate horizontally.
 Print the result of resampling gdp every decade (i.e., using .resample('10A')) and aggregating with the method .last(). This has been done for you, so hit 'Submit Answer' to see the result!
 '''
+
+#                 China
+# Year                 
+# 1961-01-01  49.557050
+# 1962-01-01  46.685179
+# 1963-01-01  50.097303
+# 1964-01-01  59.062255
+# 1965-01-01  69.709153
+#                US
+# Year             
+# 1947-04-01  246.3
+# 1947-07-01  250.1
+# 1947-10-01  260.3
+# 1948-01-01  266.2
+# 1948-04-01  272.9
+
 # Resample and tidy china: china_annual
 china_annual = china.resample('A').pct_change(10).dropna()
 

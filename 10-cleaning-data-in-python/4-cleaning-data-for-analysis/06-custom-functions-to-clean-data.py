@@ -45,3 +45,9 @@ tips['sex_recode'] = tips.sex.apply(recode_sex)
 
 # Print the first five rows of tips
 print(tips.head())
+
+# # Apply the function to the sex column
+# tips['sex_recode'] = tips['sex'].apply(recode_sex)
+
+# # Print the first five rows of tips
+# print(tips.head())

@@ -23,4 +23,4 @@ press 3
 
 The DataFrame takes up 203.2+ KB of memory.
 '''
-100 of the columns are of type float64 and 1 column is of type object.
+# 100 of the columns are of type float64 and 1 column is of type object.

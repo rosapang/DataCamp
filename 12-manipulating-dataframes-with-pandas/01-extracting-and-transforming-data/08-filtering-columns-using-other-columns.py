@@ -18,10 +18,11 @@ Print the output of election.info(). This has been done for you, so hit 'Submit 
 import numpy as np
 
 # Create the boolean array: too_close
-too_close = election['margin'] < 1
-
+too_close = election['margin']<1
+print(too_close)
 # Assign np.nan to the 'winner' column where the results were too close to call
-election.loc[too_close, 'winner'] = np.nan
+election.loc[too_close,'winner'] = np.nan
 
 # Print the output of election.info()
 print(election.info())
+print(election.loc[too_close,'winner'])

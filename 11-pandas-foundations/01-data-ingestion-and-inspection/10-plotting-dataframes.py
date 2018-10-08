@@ -21,7 +21,7 @@ df.plot()
 plt.show()
 
 # Plot all columns as subplots
-df.plot(subplots=True,)
+df.plot(subplots=True)
 plt.show()
 
 # Plot just the Dew Point data
@@ -33,3 +33,5 @@ plt.show()
 column_list2 = ['Temperature (deg F)','Dew Point (deg F)']
 df[column_list2].plot()
 plt.show()
+print(df.head())
+print(df.info())

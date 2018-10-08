@@ -23,3 +23,4 @@ ts2 = ts0.loc['2010-07-04']
 
 # Extract data from '2010-12-15' to '2010-12-31': ts3
 ts3 = ts0.loc['2010-12-15':'2010-12-31']
+print(ts1.head(),ts2.head(),ts3.head(),ts0.head())

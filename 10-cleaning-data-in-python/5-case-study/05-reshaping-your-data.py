@@ -14,10 +14,11 @@ Rename the three columns of the melted DataFrame to 'country', 'year', and 'life
 Print the head of the melted DataFrame.
 '''
 # Melt gapminder: gapminder_melt
-gapminder_melt = pd.melt(frame=gapminder, id_vars='Life expectancy')
+print(gapminder.head())
+gapminder_melt = pd.melt(frame=gapminder,id_vars='Life expectancy')
 
 # Rename the columns
-gapminder_melt.columns = ['country', 'year', 'life_expectancy']
+gapminder_melt.columns = ['country','year','life_expectancy']
 
 # Print the head of gapminder_melt
 print(gapminder_melt.head())

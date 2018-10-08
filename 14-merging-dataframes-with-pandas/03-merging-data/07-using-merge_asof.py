@@ -18,6 +18,30 @@ Print the tail of merged. This has been done for you.
 Resample merged using 'A' (annual frequency), and on='Date'. Select [['mpg','Price']] and aggregate the mean. Store the result as yearly.
 Hit Submit Answer to examine the contents of yearly and yearly.corr(), which shows the Pearson correlation between the resampled 'Price' and 'mpg'.
 '''
+
+# oil
+#         Date  Price
+# 0 1970-01-01   3.35
+# 1 1970-02-01   3.35
+# 2 1970-03-01   3.35
+# 3 1970-04-01   3.35
+# 4 1970-05-01   3.35
+
+# auto
+#     mpg  cyl  displ   hp  weight  accel         yr origin  \
+# 0  18.0    8  307.0  130    3504   12.0 1970-01-01     US   
+# 1  15.0    8  350.0  165    3693   11.5 1970-01-01     US   
+# 2  18.0    8  318.0  150    3436   11.0 1970-01-01     US   
+# 3  16.0    8  304.0  150    3433   12.0 1970-01-01     US   
+# 4  17.0    8  302.0  140    3449   10.5 1970-01-01     US   
+
+#                         name  
+# 0  chevrolet chevelle malibu  
+# 1          buick skylark 320  
+# 2         plymouth satellite  
+# 3              amc rebel sst  
+# 4                ford torino
+
 # Merge auto and oil: merged
 merged = pd.merge_asof(auto, oil, left_on='yr', right_on='Date')
 

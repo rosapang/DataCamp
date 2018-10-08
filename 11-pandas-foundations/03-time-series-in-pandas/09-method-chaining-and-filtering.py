@@ -17,6 +17,8 @@ import pandas as pd
 df = pd.read_csv('../_datasets/austin_airport_departure_data_2015_july.csv')
 
 # Strip extra whitespace from the column names: df.columns
+# # Strip extra whitespace from the column names: df.columns
+# df.columns = df.columns.str.strip()
 df.columns = df.columns.str.strip(' ')
 
 # Extract data for which the destination airport is Dallas: dallas

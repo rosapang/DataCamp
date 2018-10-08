@@ -15,15 +15,17 @@ INSTRUCTIONS
 '''
 # Reindex without fill method: ts3
 ts3 = ts2.reindex(ts1.index)
-
+print(ts1,ts2)
+print(ts3)
 # Reindex with fill method, using forward fill: ts4
-ts4 = ts2.reindex(ts1.index, method='ffill')
-
+ts4 = ts2.reindex(ts1.index,method='ffill')
+print(ts4)
 # Combine ts1 + ts2: sum12
-sum12 = ts1 + ts2
-
+sum12 = ts1+ts2
+print(sum12)
 # Combine ts1 + ts3: sum13
-sum13 = ts1 + ts3
-
+sum13 = ts1+ts3
+print(sum13)
 # Combine ts1 + ts4: sum14
-sum14 = ts1 + ts4
+sum14 = ts1+ts4
+print(sum14)

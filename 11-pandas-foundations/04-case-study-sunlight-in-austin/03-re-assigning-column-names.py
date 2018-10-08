@@ -16,6 +16,7 @@ INSTRUCTIONS
 '''
 # Split on the comma to create a list: column_labels_list
 column_labels_list = column_labels.split(',')
+print(column_labels)
 
 # Assign the new column labels to the DataFrame: df.columns
 df.columns = column_labels_list

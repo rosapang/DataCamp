@@ -20,6 +20,29 @@ Execute a left merge with sales and managers to yield a new DataFrame sales_and_
 Use how='left', left_on=['city', 'state'], and right_on=['branch', 'state].
 Print the new DataFrame sales_and_managers. This has been done for you, so hit 'Submit Answer' to see the result!
 '''
+
+# revenue
+#    branch_id         city  revenue state
+# 0         10       Austin      100    TX
+# 1         20       Denver       83    CO
+# 2         30  Springfield        4    IL
+# 3         47    Mendocino      200    CA
+
+# managers
+#         branch  branch_id   manager state
+# 0       Austin         10  Charlers    TX
+# 1       Denver         20      Joel    CO
+# 2    Mendocino         47     Brett    CA
+# 3  Springfield         31     Sally    MO
+
+# sales
+#           city state  units
+# 0    Mendocino    CA      1
+# 1       Denver    CO      4
+# 2       Austin    TX      2
+# 3  Springfield    MO      5
+# 4  Springfield    IL      1
+
 # Merge revenue and sales: revenue_and_sales
 revenue_and_sales = pd.merge(revenue, sales, how='right', on=['city', 'state'])
 

@@ -12,7 +12,7 @@ INSTRUCTIONS
 -Construct a pandas DataFrame from the dictionary you created and assign it to df.
 '''
 # Make a string with the value 'PA': state
-state = 'PA'
+state = str('PA')
 
 # Construct a dictionary: data
 data = {'state':state, 'city':cities}

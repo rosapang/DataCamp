@@ -21,7 +21,7 @@ mean_fractions = fractions.expanding().mean()
 fractions_change = mean_fractions.pct_change() * 100
 
 # Reset the index of fractions_change: fractions_change
-fractions_change = fractions_change.reset_index()
+fractions_change = fractions_change.reset_index('Edition')
 
 # Print first & last 5 rows of fractions_change
 print(fractions_change.head())

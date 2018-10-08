@@ -17,14 +17,14 @@ import pandas as pd
 df = pd.read_csv('../_datsets/weather_data_austin_2010')
 
 # Extract temperature data for August: august
-august = df['Temperature']['2010-August']
-
+august = df['Temperature'].loc['2010-08-01':'2010-08-31']
+print(august)
 # Downsample to obtain only the daily highest temperatures in August: august_highs
 august_highs = august.resample('D').max()
-
+print(august_highs)
 # Extract temperature data for February: february
-february = df['Temperature']['2010-February']
-
+february = df['Temperature'].loc['2010-2']
+print(february)
 # Downsample to obtain the daily lowest temperatures in February: february_lows
 february_lows = february.resample('D').min()
-
+print(february_lows)

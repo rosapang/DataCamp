@@ -16,11 +16,16 @@ Hit 'Submit Answer' to print the boolean equivalence of the .loc and .iloc selec
 '''
 
 # Assign the row position of election.loc['Bedford']: x
-x = 4
+print(election.head())
+x = election.loc['Bedford']
 
-# Assign the column position of election['winner']: y
-y = 4
+reset=election.reset_index()
+print(reset)
 
-# Print the boolean equivalence
+x = reset[reset.county == 'Bedford'].index[0]
+print(x)
+# # Assign the column position of election['winner']: y
+y = election.columns.get_loc('winner')
+print(y)
+# # Print the boolean equivalence
 print(election.iloc[x, y] == election.loc['Bedford', 'winner'])
-

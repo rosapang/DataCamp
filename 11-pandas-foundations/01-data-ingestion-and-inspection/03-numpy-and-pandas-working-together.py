@@ -28,3 +28,6 @@ df_log10 = np.log10(df)
 # Print original and new data containers
 print(type(np_vals), type(np_vals_log10))
 print(type(df), type(df_log10))
+
+# Print original and new data containers
+[print(x, 'has type', type(eval(x))) for x in ['np_vals', 'np_vals_log10', 'df', 'df_log10']]

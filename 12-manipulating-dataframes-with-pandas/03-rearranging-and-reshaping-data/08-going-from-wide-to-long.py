@@ -11,7 +11,8 @@ Define a DataFrame skinny where you melt the 'visitors' and 'signups' columns of
 Print skinny to verify the results. Note the value column that had the cell values in users.
 '''
 # Melt users: skinny
-skinny = pd.melt(users, id_vars=['weekday','city'])
+print(users)
+skinny = pd.melt(users,id_vars=['weekday','city'],value_vars=['visitors','signups'])
 
 # Print skinny
 print(skinny)

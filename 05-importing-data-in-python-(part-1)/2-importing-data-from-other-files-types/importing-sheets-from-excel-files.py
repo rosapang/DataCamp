@@ -37,3 +37,10 @@ df2 = xl.parse(0)
 
 # Print the head of the DataFrame df2
 print(df2.head())
+
+# another Solution
+# # Load a sheet into a DataFrame by index: df2
+# df2 = xl.parse('2002')
+
+# # Print the head of the DataFrame df2
+# print(df2.head())

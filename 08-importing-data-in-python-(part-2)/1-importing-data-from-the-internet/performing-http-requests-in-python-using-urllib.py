@@ -9,7 +9,7 @@ request = Request(url)
 
 # Sends the request and catches the response: response
 response = urlopen(request)
-
+html=response.read()
 # Print the datatype of response
 print(type(response))
 

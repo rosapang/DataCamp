@@ -11,7 +11,7 @@ INSTRUCTIONS
 -Print the shape and the head of the concatenated DataFrame.
 '''
 # Concatenate the DataFrames row-wise
-gapminder = pd.concat([g1800s, g1900s, g2000s])
+gapminder = pd.concat([g1800s, g1900s, g2000s],axis=0)
 
 # Print the shape of gapminder
 print(gapminder.shape)

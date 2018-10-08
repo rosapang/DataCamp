@@ -41,3 +41,4 @@ csv2 = pd.read_csv(csv_files[1])
 
 # Print the head of csv2
 print(csv2.head())
+print(type(csv2.head()))

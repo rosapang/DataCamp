@@ -19,6 +19,7 @@ INSTRUCTIONS
 ebola_tidy. Be sure to specify axis=1 and to pass the two DataFrames in as a list.
 -Print the shape and then the head of the concatenated DataFrame, ebola_tidy.
 '''
+
 # Concatenate ebola_melt and status_country column-wise: ebola_tidy
 ebola_tidy = pd.concat([ebola_melt, status_country], axis=1)
 

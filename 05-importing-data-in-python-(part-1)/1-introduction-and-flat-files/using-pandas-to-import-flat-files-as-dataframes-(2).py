@@ -28,3 +28,10 @@ data_array = data.values
 
 # Print the datatype of data_array to the shell
 print(type(data_array))
+
+# another solution
+#  # Build a numpy array from the DataFrame: data_array
+# data_array=np.array(data)
+
+# # Print the datatype of data_array to the shell
+# print(type(data_array))

@@ -1,36 +1,17 @@
 '''
 Using subplot() (2)
-
 Now you have some familiarity with plt.subplot(), you can use it to plot more plots in larger grids of subplots of the same figure.
 
-Here, you will make a 2×2
-2
-×
-2
- grid of subplots and plot the percentage of degrees awarded to women in Physical Sciences (using physical_sciences), in Computer Science (using computer_science), in Health Professions (using health), and in Education (using education).
+Here, you will make a 2×2 grid of subplots and plot the percentage of degrees awarded to women in Physical Sciences (using physical_sciences), in Computer Science (using computer_science), in Health Professions (using health), and in Education (using education).
 
 INSTRUCTIONS
-100XP
-Create a figure with 2×2
-2
-×
-2
- subplot layout, make the top, left subplot active, and plot the % of degrees awarded to women in Physical Sciences in blue in the active subplot.
-Make the top, right subplot active in the current 2×2
-2
-×
-2
-subplot grid and plot the % of degrees awarded to women in Computer Science in red in the active subplot.
-Make the bottom, left subplot active in the current 2×2
-2
-×
-2
-subplot grid and plot the % of degrees awarded to women in Health Professions in green in the active subplot.
-Make the bottom, right subplot active in the current 2×2
-2
-×
-2
-subplot grid and plot the % of degrees awarded to women in Education in yellow in the active subplot.
+100 XP
+INSTRUCTIONS
+100 XP
+Create a figure with 2×2 subplot layout, make the top, left subplot active, and plot the % of degrees awarded to women in Physical Sciences in blue in the active subplot.
+Make the top, right subplot active in the current 2×2 subplot grid and plot the % of degrees awarded to women in Computer Science in red in the active subplot.
+Make the bottom, left subplot active in the current 2×2 subplot grid and plot the % of degrees awarded to women in Health Professions in green in the active subplot.
+Make the bottom, right subplot active in the current 2×2 subplot grid and plot the % of degrees awarded to women in Education in yellow in the active subplot.
 '''
 # Create a figure with 2x2 subplot layout and make the top left subplot active
 plt.subplot(2,2,1)

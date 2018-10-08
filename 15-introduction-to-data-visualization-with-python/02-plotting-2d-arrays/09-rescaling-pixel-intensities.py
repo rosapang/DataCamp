@@ -1,24 +1,16 @@
 '''
 Rescaling pixel intensities
-
 Sometimes, low contrast images can be improved by rescaling their intensities. For instance, this image of Hawkes Bay, New Zealand (originally by Phillip Capper, modified by User:Konstable, via Wikimedia Commons, CC BY 2.0) has no pixel values near 0 or near 255 (the limits of valid intensities).
 
 For this exercise, you will do a simple rescaling (remember, an image is NumPy array) to translate and stretch the pixel intensities so that the intensities of the new image fill the range from 0 to 255.
 
 INSTRUCTIONS
-100XP
+100 XP
 Use the methods .min() and .max() to save the minimum and maximum values from the array image as pmin and pmax respectively.
 Create a new 2-D array rescaled_image using 256*(image-pmin)/(pmax-pmin)
-Plot the original array image in the top subplot of a 2×1
-2
-×
-1
-grid.
-Plot the new array rescaled_image in the bottom subplot of a 2×1
-2
-×
-1
- grid.
+Plot the original array image in the top subplot of a 2×1 grid.
+Plot the new array rescaled_image in the bottom subplot of a 2×1 grid.
+
  '''
  # Load the image into an array: image
 image = plt.imread('640px-Unequalized_Hawkes_Bay_NZ.jpg')

@@ -36,4 +36,5 @@ titanic.loc[titanic['pclass'] == 2].plot(ax=axes[1], y='fare', kind='box')
 titanic.loc[titanic['pclass'] == 3].plot(ax=axes[2], y='fare', kind='box')
 
 # Display the plot
+print(titanic[(titanic['pclass'] == 3)&(titanic['fare']>40)]['fare'])
 plt.show()

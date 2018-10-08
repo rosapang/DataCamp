@@ -12,8 +12,9 @@ Filter the election DataFrame with the high_turnout array and assign it to high_
 Print the filtered DataFrame. This has been done for you, so hit 'Submit Answer' to see it!
 '''
 # Create the boolean array: high_turnout
-high_turnout = election['turnout'] > 70
-
+# print(election.head())
+high_turnout = election['turnout']>70
+# print(high_turnout)
 # Filter the election DataFrame with the high_turnout array: high_turnout_df
 high_turnout_df = election[high_turnout]
 

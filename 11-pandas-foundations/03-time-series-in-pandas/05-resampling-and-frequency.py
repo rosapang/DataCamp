@@ -17,7 +17,8 @@ import pandas as pd
 df = pd.read_csv('../_datsets/weather_data_austin_2010')
 
 # Downsample to 6 hour data and aggregate by mean: df1
-df1 = df['Temperature'].resample('6H').mean()
-
+df1 = df['Temperature'].resample('6h').mean()
+print(df1)
 # Downsample to daily data and count the number of data points: df2
 df2 = df['Temperature'].resample('D').count()
+print(df2)

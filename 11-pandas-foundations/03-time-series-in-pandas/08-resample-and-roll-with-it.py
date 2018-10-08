@@ -16,6 +16,8 @@ import pandas as pd
 df = pd.read_csv('../_datsets/weather_data_austin_2010')
 
 # Extract the August 2010 data: august
+# # Extract the August 2010 data: august
+# august = df['Temperature']['2010-Aug']
 august = df['Temperature']['2010-Aug-01':'2010-Aug-31']
 
 # Resample to daily data, aggregating by max: daily_highs

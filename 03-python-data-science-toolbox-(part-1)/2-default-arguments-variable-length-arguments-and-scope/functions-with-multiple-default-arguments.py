@@ -49,3 +49,14 @@ big_no_echo = shout_echo('Hey', intense=True)
 # Print values
 print(with_big_echo)
 print(big_no_echo)
+
+# another solution
+# # Call shout_echo() with "Hey", echo=5 and intense=True: with_big_echo
+# with_big_echo = shout_echo('Hey', intense=True,echo=5)
+
+# # Call shout_echo() with "Hey" and intense=True: big_no_echo
+# big_no_echo = shout_echo('Hey',intense=True)
+
+# # Print values
+# print(with_big_echo)
+# print(big_no_echo)

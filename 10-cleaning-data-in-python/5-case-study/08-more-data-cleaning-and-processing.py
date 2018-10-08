@@ -21,7 +21,7 @@ INSTRUCTIONS
 assert pd.notnull(gapminder.country).all()
 
 # Assert that year does not contain any missing values
-assert pd.notnull(gapminder.year).all()
+assert pd.notnull(gapminder.year).all().all()
 
 # Drop the missing values
 gapminder = gapminder.dropna()

@@ -26,3 +26,19 @@ num1, num2, num3 = nums
 
 # Construct even_nums
 even_nums = (2, num2, num3)
+
+# extention solution
+# Unpack nums into num1, num2, and num3
+num1,num2,num3=nums
+print(num1)
+print(num2)
+print(num3)
+# Construct even_nums
+even_nums=num1,num2,num3
+print(even_nums[0])
+lst=list(even_nums)
+print(lst)
+lst[0]=2
+print(lst)
+even_nums=tuple(lst)
+print(even_nums)

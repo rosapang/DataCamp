@@ -11,7 +11,11 @@ Use a pivot table to index the rows of users by 'weekday' and the columns of use
 Print by_city_day. This has been done for you, so hit 'Submit Answer' to see the result.
 '''
 # Create the DataFrame with the appropriate pivot table: by_city_day
+print(users)
 by_city_day = users.pivot_table(index='weekday',columns='city')
 
 # Print by_city_day
 print(by_city_day)
+
+by_city_day_pivot = users.pivot(index='weekday',columns='city')
+print(by_city_day_pivot)

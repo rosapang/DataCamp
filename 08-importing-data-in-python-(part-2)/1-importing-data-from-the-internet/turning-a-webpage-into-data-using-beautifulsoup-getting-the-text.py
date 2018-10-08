@@ -1,3 +1,19 @@
+'''
+Turning a webpage into data using BeautifulSoup: getting the text
+As promised, in the following exercises, you'll learn the basics of extracting information from HTML soup. In this exercise, you'll figure out how to extract the text from the BDFL's webpage, along with printing the webpage's title.
+
+INSTRUCTIONS
+100 XP
+INSTRUCTIONS
+100 XP
+In the sample code, the HTML response object html_doc has already been created: your first task is to Soupify it using the function BeautifulSoup() and to assign the resulting soup to the variable soup.
+Extract the title from the HTML soup soup using the attribute title and assign the result to guido_title.
+Print the title of Guido's webpage to the shell using the print() function.
+Extract the text from the HTML soup soup using the method get_text() and assign to guido_text.
+Hit submit to print the text from Guido's webpage to the shell.
+
+'''
+
 # Import packages
 import requests
 from bs4 import BeautifulSoup

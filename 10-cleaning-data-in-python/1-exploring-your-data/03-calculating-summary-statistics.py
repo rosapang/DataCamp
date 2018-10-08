@@ -25,3 +25,5 @@ press 4
 The maximum of 'Proposed Height' is 4200.
 press 5
 '''
+
+# The standard deviation of 'Street Frontage' is 11.874080.
